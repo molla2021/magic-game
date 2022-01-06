@@ -1,16 +1,12 @@
 import './App.css'
-import TripList from './components/TripList'
-import { useState } from 'react'
 
-function App() {
-  const [showTrips, setShowTrips] = useState(true)
-
+function App(){
   return (
     <div className="App">
-      <button onClick={() => setShowTrips(false)}>hide trips</button>
-      {showTrips && <TripList /> }
+     <h1>Magic Match</h1>
+     <button>New Game</button>
     </div>
   );
 }
-
+  
 export default App
